@@ -10,9 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "graphql": "^15.9.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/apollo": "^5.0.0-alpha.14",
+    "@nuxtjs/tailwindcss": "^6.12.1"
   }
 }
