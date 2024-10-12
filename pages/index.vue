@@ -1,10 +1,8 @@
 <template>
     <div>
-      <h1>Employee Directory</h1>
-      {{query}}
       <div  class="employee-list">
         <ul>
-          <li v-for="employee in employees" :key="employee.id">
+          <li v-for="employee in query.data.value.Employee" :key="employee.id">
             <strong>{{ employee.name }}</strong> - {{ employee.position }}
             <br />
             Department: {{ employee.department }}
@@ -24,6 +22,7 @@ query MyQuery {
     deparmtment
     email
     Id
+    name
   }
 }
 
