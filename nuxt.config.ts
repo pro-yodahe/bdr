@@ -6,7 +6,12 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: 'https://bits-hackathon.hasura.app/v1/graphql'
+        httpEndpoint: 'https://bits-hackathon.hasura.app/v1/graphql',
+        httpLinkOptions: {
+          headers: {
+            'x-hasura-admin-secret': 'w70qqEaxeDrGBPMPMMofKoIkBfX7pumuZsSwxgVVevd0C8AP5aMWc6CnePhXp8HX',
+      },
+  },
       }
     },
   }
